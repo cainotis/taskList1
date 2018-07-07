@@ -1,0 +1,17 @@
+<ion-header>
+	<ion-navbar>
+		<button menuToggle *ngIf="!selectedItem">
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Detalhes</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+	<h4 text-center *ngIf="selectedItem">
+		{{selectedItem.title}}
+	</h4>
+	<h3 text-center *ngIf="selectedItem">
+		{{selectedItem.details}}
+	</h3>
+</ion-content>
